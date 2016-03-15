@@ -1,5 +1,10 @@
 
-#The project
+# API generation
+
+# Install
+ 1. Download the project.
+ 2. Add the folder into node_modules in your project(provisional until publication in npm).
+ 3. import with your project requires and follow the detailed sample code below.
 This project, generate the backend Full API REST depending to models describe you in the config gile API_config.json
 This file is a json list of object wich contain three atributes, name of model, atributtes list of model and type list of the atributes. Each object is defined by the following code.
 ```json
