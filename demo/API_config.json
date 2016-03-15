@@ -1,0 +1,10 @@
+[
+    {"nombre":"usuario", 
+     "atributos":["nombre","apellido","Pais"],
+     "tipos":["string","string","string"]
+    },
+    {"nombre":"Grupo", 
+     "atributos":["nombre","rol","leader"],
+     "tipos":["string","string","string"]
+    }
+]

@@ -1,0 +1,19 @@
+{
+  "name": "DevFestBurgos",
+  "version": "0.0.0",
+  "description": "Api REST con MEAN en 35 min",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+      "mongoose": "*",
+      "express": "*",
+      "body-parser": "*",
+      "method-override": "*",
+      "fs":"*",
+      "mkdirp":"*"
+  },
+  "author": "Borja Godoy Gago",
+  "license": "BSD-2-Clause"
+}
