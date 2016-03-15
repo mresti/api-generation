@@ -11,15 +11,32 @@ This file is a json list of object wich contain three atributes, name of model, 
 Only you need add the next lines in your server.js 
 ``````js
 var express = require('express');
-var app = express();
+var mongoose = require('mongoose');
 
-var apisGen = require('APITemplate');
-apisGen(app);
-var route = require(./route.js);
+var bodyParser= require('body-parser');
+var methodOverride= require('method-override');
+var generateApis= require('APITemplate');
+var route = require('./route.js');
+
+var app= express();
+
+
+
+mongoose.connect('mongodb://localhost/project', function(err) {  
+    
+        if(!err) 
+            console.log('BD Connect');    
+});
+
+app.use(express.static(__dirname + '/app')); 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded());
+app.use(methodOverride());
+
+generateApis(app);
 route(app);
 
-app.listen(3000)
-```
+app.listen(3000);```
 And the module generate the all code for the API's of the models declared you in the file confing API_config.json
 
   [MIT](LICENSE)
