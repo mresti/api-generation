@@ -8,7 +8,7 @@ This file is a json list of object wich contain three atributes, name of model, 
  "type":["string","string","string"]
 }
 ```
-Only you need add the next lines in your server.js 
+Only you need add the two news lines in your server.js 
 ``````js
 var express = require('express');
 var mongoose = require('mongoose');
@@ -33,10 +33,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(methodOverride());
 
-generateApis(app);
-route(app);
+generateApis(app); //new line
+route(app);       //new line
 
-app.listen(3000);```
+app.listen(3000);
+```
 And the module generate the all code for the API's of the models declared you in the file confing API_config.json
+the rest were longer necessary to use express.
+
+This helps us to end the repetitive task of creating drivers for each model that we needed the apis
 
   [MIT](LICENSE)
