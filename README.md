@@ -38,9 +38,10 @@ route(app);       //new line
 
 app.listen(3000);
 ```
-And the module generate the all code for the API's of the models declared you in the file confing API_config.json
+The rest were longer necessary to use express.
+
+This helps us to end the repetitive task of creating controllers for each model that we needed the apis and the module generate the all code for the API's of the models declared you in the file confing API_config.json
 the rest were longer necessary to use express.
 
-This helps us to end the repetitive task of creating drivers for each model that we needed the apis
 
   [MIT](LICENSE)
